@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-like Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Chess-like Game</h1>
+        <div id="gameIdInput">
+            <input type="text" id="gameId" placeholder="Enter Game ID">
+            <button onclick="joinGame()">Join Game</button>
+        </div>
+        <div id="currentPlayer"></div>
+        <div class="board" id="board"></div>
+        <div class="moves" id="moves"></div>
+        <p id="message"></p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
